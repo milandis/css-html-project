@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	
+	src: url("../../font/Kunakisisa.ttf");
+	src: url("../../font/Aloevera-OVoWO.ttf");
+				font-family: Aloevera-OVoWO ;
+			}
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+}
+a{
+	text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+h1,h2,h3,h4,h5, .space, .kuchen-info div{
+	font-family:  Comic Sans,/*Aloevera-OVoWO*/;
+}
+p{
+	
+	font-weight: bold;
+}
+body{
+	font-family: Comic Sans MS,Aloevera-OVoWO, sansation,arial,webkurs,sans-serif;
+}
+
+.container{
+	padding: 1.5rem 3rem;
+}
+.k-img{
+	margin: 1rem auto;
+}
+img{
+	width: 15rem;
+	height: 15rem;
+}
+.space{
+	margin: 1rem 0px;
+	margin-left: -2rem;
+}
+.circle{
+	border:2px solid rgba(99,99,99,1.00);
+	border-radius: 50%;
+	padding: 0.5rem;
+	margin-right: 3px;
+	
+}
+.break{
+	 width: 90%;
+	display: block;
+	padding-right: 0.5rem;
+}
+.kuchen-info{
+	display: grid;
+	
+}
+/* To multi-column texts 	*/
+@media screen and (min-width: 40rem /*768px*/) {
+	.kuchen-info{
+		width: 95vw;
+		grid-template-columns: 1fr 1fr;
+		max-width: 70%;
+	
+}
+.col{
+	margin-right: 2rem;
+}
+    
+}
+@media screen and (min-width: 75rem /*1200px*/) {
+	.kuchen-info{
+		width: 95vw;
+		grid-template-columns: 1fr 1fr 1fr ;
+		max-width: 70%;
+	
+	}
+    
+}
+@media screen and (min-width: /*75rem */1450px) {
+	.kuchen-info{
+		width: 95vw;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		max-width: 70%;
+	
+	}
+	
+}
